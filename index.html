@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BÀI TẬP JS BUỔI 15</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <hr class="my-5" />
+          <section id="bt1">
+            <h2 class="text-danger">Bài tập 1: Quản lý tuyển sinh</h2>
+            <h4 class="text-primary">Điểm chuẩn</h4>
+            <div class="mb-3">
+              <input type="text" class="form-control int" name="" id="diemChuan" aria-describedby="helpId" placeholder="Nhập điểm chuẩn" />
+            </div>
+            <h4 class="text-primary">Điểm thi 3 môn</h4>
+            <div class="row">
+              <div class="col-4">
+                <div class="mb-3">
+                  <input type="text" class="form-control int" name="" id="mon1" aria-describedby="helpId" placeholder="Nhập điểm môn 1" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="mb-3">
+                  <input type="text" class="form-control int" name="" id="mon2" aria-describedby="helpId" placeholder="Nhập điểm môn 2" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="mb-3">
+                  <input type="text" class="form-control int" name="" id="mon3" aria-describedby="helpId" placeholder="Nhập điểm môn 3" />
+                </div>
+              </div>
+            </div>
+            <div class="area">
+              <h4 class="text-primary">Chọn khu vực ưu tiên</h4>
+              <div class="note mb-3">
+                <ul>
+                  <li>A : 2</li>
+                  <li>B : 1</li>
+                  <li>C : 0.5</li>
+                </ul>
+                <small class="text-danger">Lưu ý : Chọn X nếu không thuộc khu vực ưu tiên</small>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="area" id="" value="0" checked />
+                <label class="form-check-label" for="">X</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="area" id="" value="2" />
+                <label class="form-check-label" for="">A</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="area" id="" value="1" />
+                <label class="form-check-label" for="">B</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="area" id="" value="0.5" />
+                <label class="form-check-label" for="">C</label>
+              </div>
+            </div>
+            <div class="subject mt-3">
+              <h4 class="text-primary">Chọn đối tượng</h4>
+              <div class="note mb-3">
+                <ul>
+                  <li>1 : 2.5</li>
+                  <li>2 : 1.5</li>
+                  <li>3 : 1</li>
+                </ul>
+                <small class="text-danger">Lưu ý : Chọn 0 nếu không thuộc đối tượng ưu tiên</small>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="object" id="" value="0" checked />
+                <label class="form-check-label" for="">0</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="object" id="" value="1" />
+                <label class="form-check-label" for="">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="object" id="" value="2" />
+                <label class="form-check-label" for="">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="object" id="" value="3" />
+                <label class="form-check-label" for="">3</label>
+              </div>
+            </div>
+            <button class="btn btn-success my-3">Kiểm tra</button>
+            <div class="result p-2"></div>
+          </section>
+          <hr class="my-5" />
+          <section id="bt2">
+            <h2 class="text-danger">Bài tập 2: Tính tiền điện</h2>
+            <p class="text-warning">
+              50kw đầu: 500đ/kw<br />
+              50kw kế: 650đ/kw<br />
+              100kw kế: 850đ/kw<br />
+              150kw kế: 1100đ/kw<br />
+              Còn lại: 1300đ/kw
+            </p>
+            <div class="mb-3">
+              <label for="" class="form-label">Nhập tên</label>
+              <input type="text" class="form-control" name="" id="ten" aria-describedby="helpId" placeholder="" />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Nhập số tiêu thụ điện</label>
+              <input type="text" class="form-control int" name="" id="soDien" aria-describedby="helpId" placeholder="" />
+            </div>
+            <button class="btn btn-success">Tính tiền</button>
+            <div class="result"></div>
+          </section>
+          <hr class="my-5" />
+          <section id="bt3">
+            <h2 class="text-danger">Bài tập 3: Tính thuế thu nhập cá nhân</h2>
+            <div class="mb-3">
+              <label for="" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" name="" id="hoTen" aria-describedby="helpId" placeholder="" />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Tổng thu nhập</label>
+              <input type="text" class="form-control int" name="" id="tongThuNhap" aria-describedby="helpId" placeholder="" />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Số người phụ thuộc</label>
+              <input type="text" class="form-control int" name="" id="nguoiPhuThuoc" aria-describedby="helpId" placeholder="" />
+            </div>
+            <button class="btn btn-success">Tính thuế</button>
+            <div class="result"></div>
+          </section>
+          <hr class="my-5" />
+          <section id="bt4">
+            <h2 class="text-danger">Bài tập 4: Tính tiền cáp</h2>
+            <div class="mb-3">
+              <label for="" class="form-label">Mã khách hàng</label>
+              <input type="text" class="form-control" name="" id="maKhachHang" aria-describedby="helpId" placeholder="Nhập mã khách hàng" />
+            </div>
+            <div class="mb-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="loaiKhachHang" id="caNhan" value="canhan" checked />
+                <label class="form-check-label" for="caNhan">Cá nhân</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="loaiKhachHang" id="doanhNghiep" value="doanhnghiep" />
+                <label class="form-check-label" for="doanhNghiep">Doanh nghiệp</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Số kết nối</label>
+              <input type="text" class="form-control int" name="" id="soKetNoi" aria-describedby="helpId" placeholder="Nhập số kết nối" disabled />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Thuê số kênh cao cấp</label>
+              <input type="text" class="form-control int" name="" id="soKenhCaoCap" aria-describedby="helpId" placeholder="Nhập số kênh cao cấp" />
+            </div>
+            <button class="btn btn-success">Tính tiền cáp</button>
+            <div class="result" style="display: none"></div>
+          </section>
+          <hr class="my-5" />
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
